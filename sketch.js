@@ -53,8 +53,10 @@ function setup() {
 
 function draw() {
   background("black");
-  textSize(20)
- //text("Score : "+score,20,30);
+  textSize(30)
+  fill(51, 220, 83)
+  text("NATURAL COLORS OF LIFE", 200, 450)
+
   Engine.update(engine);
   ground.display();
   
@@ -63,8 +65,8 @@ function draw() {
      plinkos[i].display();
      
    }
-   if(frameCount%60===0){
-     particles.push(new Particle(random(width/2-30, width/2+30), 10,10));
+   if(frameCount%80===0){
+     particles.push(new Particle(random(width/2-320, width/2+320), 10,10));
      score++;
    }
  
